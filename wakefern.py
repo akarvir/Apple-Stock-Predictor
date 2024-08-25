@@ -11,9 +11,9 @@ from sklearn.model_selection import train_test_split
 
 
 # Simple strategy. If green point, we buy more stock. If not, we sell.
-apple_ticker = yf.Ticker("AAPL")
+microsoft_ticker = yf.Ticker("MSFT")
 
-stock_history = apple_ticker.history(period = 'max',interval = '1d')
+stock_history = microsoft_ticker.history(period = 'max',interval = '1d')
 
 # for each day, check the day ahead of it. This is for the model training data.
 
